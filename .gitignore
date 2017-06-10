@@ -22,7 +22,8 @@ DerivedData
 project.xcworkspace
 
 # Gradle
-/ios/build/
+/build
+/ios/build
 /Examples/**/android/app/build/
 /Examples/**/android/app/gradle/
 /Examples/**/android/app/gradlew

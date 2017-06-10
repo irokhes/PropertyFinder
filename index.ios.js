@@ -10,14 +10,22 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  NavigatorIOS
 } from 'react-native';
 
 import SearchPage from './SearchPage'
 
 class PropertyFinderApp extends React.Component {
   render() {
-    return <SearchPage></SearchPage>;
+    return (
+      <NavigatorIOS 
+        style = {styles.container}
+        initialRoute={{
+        title: 'PropertyFinder',
+        component: SearchPage
+      }}/>
+    );
   }
 }
 
@@ -27,6 +35,10 @@ var styles = StyleSheet.create({
     backgroundColor: 'white',
     fontSize: 30,
     margin: 80
+  },
+  container:{
+    flex:1,
+    backgroundColor:'white'
   }
 });
 
